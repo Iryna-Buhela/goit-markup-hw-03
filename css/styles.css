@@ -28,15 +28,15 @@ a {
 
 /* common */
 
+.section {
+    padding: 120px 0;
+    max-width: 100%;
+}
+
 .container {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-}
-
-.section {
-    padding: 120px 0;
-    max-width: 100%;
 }
 
 /* header */
@@ -131,7 +131,7 @@ a {
 .main-title {
     margin: 0 auto;
     margin-bottom: 48px;
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -142,10 +142,13 @@ a {
 .main-button {
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
+    border: none;
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -175,10 +178,6 @@ a {
     overflow: hidden;
 }
 
-.benefits-inner {
-    max-width: 1128px;
-}
-
 .benefits-item-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -186,7 +185,6 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
 }
 
 .benefits-list {
@@ -280,7 +278,8 @@ a {
 
 .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
 }
 
@@ -296,12 +295,11 @@ a {
 }
 
 .portfolio-border {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    padding: 32px 0;
+    display: block;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 32px 16px;
 }
-
 
 .portfolio-item-title {
     margin-bottom: 8px;
