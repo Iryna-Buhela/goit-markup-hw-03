@@ -299,7 +299,6 @@ a {
 
 .portfolio-item-title {
     margin-bottom: 8px;
-    padding-left: 16px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -308,7 +307,6 @@ a {
 }
 
 .portfolio-item-text {
-    padding-left: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
